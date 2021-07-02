@@ -13,6 +13,9 @@
 		146FBFB8268E4FE30090C53F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 146FBFB6268E4FE30090C53F /* Main.storyboard */; };
 		146FBFBA268E4FE50090C53F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 146FBFB9268E4FE50090C53F /* Assets.xcassets */; };
 		146FBFBD268E4FE50090C53F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 146FBFBB268E4FE50090C53F /* LaunchScreen.storyboard */; };
+		146FBFE4268F64E10090C53F /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146FBFE3268F64E10090C53F /* ListViewController.swift */; };
+		146FBFE8268F7CC40090C53F /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146FBFE7268F7CC40090C53F /* DetailsViewController.swift */; };
+		146FBFED268F8BB60090C53F /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146FBFEC268F8BB60090C53F /* ContactTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		146FBFB9268E4FE50090C53F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		146FBFBC268E4FE50090C53F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		146FBFBE268E4FE50090C53F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		146FBFE3268F64E10090C53F /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		146FBFE7268F7CC40090C53F /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		146FBFEC268F8BB60090C53F /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +47,6 @@
 			isa = PBXGroup;
 			children = (
 				146FBFAF268E4FE30090C53F /* homework */,
-				146FBFAE268E4FE30090C53F /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,6 +56,7 @@
 				146FBFAD268E4FE30090C53F /* homework.app */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		146FBFAF268E4FE30090C53F /* homework */ = {
@@ -58,13 +64,25 @@
 			children = (
 				146FBFB0268E4FE30090C53F /* AppDelegate.swift */,
 				146FBFB2268E4FE30090C53F /* SceneDelegate.swift */,
-				146FBFB4268E4FE30090C53F /* ViewController.swift */,
 				146FBFB6268E4FE30090C53F /* Main.storyboard */,
+				146FBFEF268F8BCF0090C53F /* Controllers */,
+				146FBFAE268E4FE30090C53F /* Products */,
 				146FBFB9268E4FE50090C53F /* Assets.xcassets */,
 				146FBFBB268E4FE50090C53F /* LaunchScreen.storyboard */,
 				146FBFBE268E4FE50090C53F /* Info.plist */,
 			);
 			path = homework;
+			sourceTree = "<group>";
+		};
+		146FBFEF268F8BCF0090C53F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				146FBFB4268E4FE30090C53F /* ViewController.swift */,
+				146FBFE3268F64E10090C53F /* ListViewController.swift */,
+				146FBFEC268F8BB60090C53F /* ContactTableViewCell.swift */,
+				146FBFE7268F7CC40090C53F /* DetailsViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +155,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				146FBFED268F8BB60090C53F /* ContactTableViewCell.swift in Sources */,
 				146FBFB5268E4FE30090C53F /* ViewController.swift in Sources */,
 				146FBFB1268E4FE30090C53F /* AppDelegate.swift in Sources */,
+				146FBFE4268F64E10090C53F /* ListViewController.swift in Sources */,
 				146FBFB3268E4FE30090C53F /* SceneDelegate.swift in Sources */,
+				146FBFE8268F7CC40090C53F /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,7 +317,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = itis.homework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,7 +336,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = itis.homework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
